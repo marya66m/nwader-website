@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>نوادر الرياض</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to left top, #00b4d8, #0077b6);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    /* Navbar */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #0077b6;
+      padding: 10px 0;
+      transition: top 0.4s;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-top: 80px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
+      background-color: #ffffff;
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: all 0.3s;
+      animation: pulse 2s infinite;
+    }
+
+    a.button:hover {
+      background-color: #caf0f8;
+      transform: scale(1.08);
+    }
+
+    .section-title {
+      font-size: 1.8em;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+      animation: pulse 2s infinite;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      animation: pulse 2s infinite;
+    }
+
+    /* Contact buttons */
+    .contact-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000;
+    }
+
+    .contact-buttons a {
+      background-color: #25D366;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-buttons a.call {
+      background-color: #007bff;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 2em; }
+      p { font-size: 1em; }
+      .section-title { font-size: 1.4em; }
+    }
+  </style>
+</head>
+<body>
+  <header id="navbar">
+    <nav>
+      <ul>
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#gallery">أعمالنا</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1 data-aos="fade-down">نوادر الرياض</h1>
+    <p data-aos="fade-up">
+      للتكييف والتأسيس وتمديد النحاس المخفي والمركزي والاسبلت<br>
+      تصنيع وتركيب الدكت – متخصصون في أعمال التكييف
+    </p>
+    <a class="button" href="#contact">تواصل معنا</a>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title" data-aos="zoom-in">خدماتنا</h2>
+    <p data-aos="fade-up">نقدم مجموعة من أفضل خدمات التكييف والتأسيس على أعلى مستوى</p>
+    <!-- يمكنك إضافة بطاقات الخدمات هنا لاحقًا -->
+  </section>
+
+  <section id="gallery">
+    <h2 class="section-title" data-aos="zoom-in-up">أعمالنا</h2>
+    <div class="gallery" data-aos="zoom-in">
+      <img src="IMG-20250616-WA0034.jpg" alt="عمل 1">
+      <img src="IMG-20250616-WA0035.jpg" alt="عمل 2">
+      <img src="IMG-20250616-WA0036.jpg" alt="عمل 3">
+      <img src="IMG-20250616-WA0037.jpg" alt="عمل 4">
+      <img src="IMG-20250616-WA0038.jpg" alt="عمل 5">
+      <img src="IMG-20250616-WA0033.jpg" alt="عمل 6">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title" data-aos="fade-up">تواصل معنا</h2>
+    <p>راسلنا عبر واتساب أو اتصل بنا مباشرة</p>
+  </section>
+
+  <!-- أزرار واتساب واتصال -->
+  <div class="contact-buttons">
+    <a href="https://wa.me/966533020857" target="_blank">💬 واتساب</a>
+    <a href="tel:966533020857" class="call">📞 اتصل بنا</a>
+  </div>
+
+  <!-- مكتبة الحركات AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Navbar hide on scroll down, show on scroll up
+    let lastScrollTop = 0;
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", function () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop) {
+        navbar.style.top = "-70px";
+      } else {
+        navbar.style.top = "0";
+      }
+      lastScrollTop = scrollTop;
+    });
+  </script>
+</body>
+</html>
